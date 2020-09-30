@@ -1,32 +1,209 @@
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-}
+/*     Quicksand font  san-serfis*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
 
 
 
+/*     'Passion One' font  serfis*/
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&display=swap');
 
-.fa-battery-empty {
-    font-size: 40em;
-    position: relative;
-    color: rgba(109, 109, 109, 0.664);
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding:0;
+                
+            }
 
-}
 
-.color-div {
-    width: 100px;
-    height: 240px;
-  /*   background-color: red; */
-    position: absolute;
-    bottom: 200px;
-    left:80px;
+            body{
+                font-size: 1em;
+                font-family: 'Quicksand', sans-serif;
+                position: relative;
+                width: 100%;
+                margin:0 auto;
+                overflow: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content:center;
+                align-items: center;
+                height: auto;
+            }
 
-}
 
-#info {
-    font-size: 3em;
-}
+            p,h1{
+                font-weight: 300;
+                word-spacing: 3px;
+                font-size: 500%;
+                margin:40px 0px;
+                color:#fff;
+            }
+            p{
+                font-size: 250%;
+            }
+
+            h3{
+                text-transform: uppercase;
+                font-size: 450%;
+                font-weight: 100;
+                word-spacing: 3px;
+                text-align: center;
+                color:rgb(255, 214, 32);
+                background-color: rgba(204, 204, 204, 0.952);
+                width:85%;
+                margin:0 auto;
+            }
+
+
+            .dark_active{
+                color:rgb(53, 53, 53);
+                font-weight: 500;
+            }
+         
+    /**************design 1************** */
+        /* battery icon style*/
+            .btn{
+                padding:5px 30px ;
+                margin-right: 30px;
+                border :none ;
+                font-size: 150%;
+                font-weight: 300;
+                color:rgb(36, 36, 36);
+                background-color: rgb(255, 255, 255);
+                cursor: pointer;
+            }
+            .btn:hover{
+                background-color:crimson;
+                color:#fff;
+                transition: background-color .3s ease-in;
+            }
+     
+        .box-color{
+            width:100%; 
+            height: auto;
+            overflow: auto;
+            background-color: transparent;
+        } 
+
+        .container1{
+            margin-top: 60px;
+            display: none;
+        }
+        .B_icon2,.B_icon{ 
+            font-size: 25em;
+            font-weight: 600;
+            
+            color: rgb(204, 204, 204);
+           display: flex;
+           position: relative;
+           justify-content: center;
+           align-items: center;
+           z-index: 2;
+           width:100%;
+           padding:20px;
+           height: 300px;
+           overflow: hidden;
+        }
+
+
+        /* width values : 75% >> 54% >> 37.4 >> 18*/
+        /* color values : rgb(53, 250, 18) >>rgb(255, 251, 10)>> rgb(255, 141, 10) >> rgb(255, 72, 47)*/
+
+        .color-div,.colored_div{
+            position: absolute;
+            width:18%;
+            height: 57%;
+            left:50px;
+            background-color: rgb(53, 250, 18);
+            display: block;
+            margin-left: 20px;
+            z-index: -1;
+            
+            
+        }
+
+       
+            /**************design 2************** */
+
+            .container2 {
+                display: none;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 60px;
+
+            }
+            
+            
+            
+            
+            .B_icon2 {
+            
+                color: rgb(53, 53, 53);
+            
+            }
+            /*
+            .color-div {
+                
+                height: 240px;
+                background-color: rgb(0, 255, 13); 
+                position: absolute;
+                z-index:-2;
+                left: 25px;
+                width:90%;
+            
+            } */
+            
+            #info {
+                font-size: 3em;
+                width: 50%;
+                background-color: rgb(53, 53, 53);
+                color:aliceblue;
+            }
+
+
+
+
+        @media only screen and (max-width:600px){
+
+
+            h1{ 
+                font-size: 200%;
+                margin-top:40px;
+            }
+            #info,p,h3{
+                font-size: 150%;
+                text-align: center;
+                width:80%;
+                margin: 0 auto;
+            }
+            p{
+                margin-bottom: 20px;
+            }
+            .B_icon2,.B_icon{
+                font-size: 15em;
+            }
+
+            .color-div,.colored_div{
+                height: 50%;
+                left:18px;
+            }
+
+
+
+
+
+
+    
+        }
+
+        .btn-active { 
+            background-color:crimson;
+            color:#fff;
+        }
+
+        .active{
+            display: flex;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }

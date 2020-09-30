@@ -1,29 +1,55 @@
+ 
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <script src="https://kit.fontawesome.com/0e03cf8df9.js" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/0e03cf8df9.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/5e4e3cd377.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+
 </head>
+<body style="background-color: brown;">
+    
+    <h1 id="header">Battery Status App </h1>
+    <p id="sub_header">check up your battery device status </h4>
+    <div>
+        <button class="btn des_1 btn-active" id="design1"><</button>
 
-<body>
-  <div class="container">
-
-
-         <i class="fas fa-battery-empty">
-            <div class="color-div" id="div1">
-
+        <button class="btn des_2" id="design2">> </button>
+    </div>
+   
+    <div class="container1 active" id="container1">
+        
+            <div class="box-color">
+                <i class="fas fa-battery-empty B_icon">
+                    <div class="colored_div" id="Bbattery"></div> 
+               
+                </i>
+               <h3 id="_percent">100%<h3>
             </div>
-          </i>
 
-          <h3 id="info"></h3>
+           
 
-  </div>
+    </div>
+
+    <div class="container2" id="container2">
 
 
+        <i class="fas fa-battery-empty B_icon2">
+           <div class="color-div" id="div1">
+
+           </div>
+         </i>
+
+         <h3 id="info">s</h3>
+
+ </div>
+
+
+
+    <script src="App.js"></script>
     <script src="index.js"></script>
+
 </body>
 </html>
