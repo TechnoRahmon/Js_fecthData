@@ -1,0 +1,32 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+
+
+
+.fa-battery-empty {
+    font-size: 40em;
+    position: relative;
+    color: rgba(109, 109, 109, 0.664);
+
+}
+
+.color-div {
+    width: 100px;
+    height: 240px;
+  /*   background-color: red; */
+    position: absolute;
+    bottom: 200px;
+    left:80px;
+
+}
+
+#info {
+    font-size: 3em;
+}
