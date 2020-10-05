@@ -1,52 +1,269 @@
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fetching Data</title>
-<style>
-    .loader {
-  border: 10px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 10px solid rgb(17, 132, 240);
-  border-bottom: 10px solid rgb(14, 68, 184);
-  width: 30px;
-  height: 30px;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;  
-
-}
-
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg);}
-  100% { -webkit-transform: rotate(360deg); }
-
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg);
-  opacity: 0; }
-  100% { transform: rotate(360deg); 
-  opacity: 1;
-  }
-}
-
-.container {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-</style>
+    <title>Character App</title>
+    <script src="https://kit.fontawesome.com/5e4e3cd377.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 
 </head>
-<body>
-    <div class="container">
-    <div class="loader"></div> 
-    </div>
 
 
-    <script src="script.js"></script>
+   
+
+
+<body >
+   
+   
+    <main>
+
+        <h1>CHARACTERS Presentation's App </h1>
+        <p>choose your character's job blow. </h4>
+    
+   
+<!-- *******************  CHarcter nav ****************************-->
+            <div class="titels">
+                <h3>berserker</h3>
+                <h3>engineer</h3>
+                <h3>rogue</h3>
+                <h3>scribe</h3>
+
+            </div>
+            <div class="nav">
+
+
+
+                <!--ch1-->
+            
+                <div class="bk_img scale_active" id="ch-0">
+                    <div class="ch_box active" id="ChBtn-0">
+    
+                       
+                            
+                        </div>
+
+
+
+                </div>
+            
+            <!--ch2-->
+                <div class=" bk_img " id="ch-1">
+                    <div class="ch_box" id="ChBtn-1">
+
+                    
+                            
+                        </div>
+                        
+            
+            
+                </div>
+
+            <!--ch3-->
+                <div class=" bk_img" id="ch-2">
+                    <div class="ch_box" id="ChBtn-2">
+
+                    
+                            
+                        </div>
+
+                 </div>
+            
+             <!--ch4-->
+                <div class=" bk_img" id="ch-3">
+                    <div class="ch_box" id="ChBtn-3">
+    
+                       
+                            
+                        </div>
+
+                   </div>     
+            </div>
+
+    <!-- ***** end  CHarcter nav ****-->
+
+
+
+    <!-- *****   CHarcter section ****-->
+   
+        <section class="Ch_section" id="Ch_section" >
+            <div class="container" id="container">
+                <div class="loader"></div> 
+                </div>
+
+            <!-- 
+            <div class="box" id="0">
+                <div>
+                    <table>
+                        <caption>CHARACTER STATUS:</caption>
+                        <tr>
+                            <th>STR</th>
+                            <th>DEX</th>
+                            <th>INT</th>
+                            <th>HP</th>
+                        </tr>
+                        <tr>
+                            <td>300</td>
+                            <td>24</td>
+                            <td>3</td>
+                            <td>600</td>
+
+                        </tr>
+                    </table>
+
+
+
+                    <table id="bp_info">
+                        <caption>BODY PART CLASS:</caption>
+                        <tr>
+                            <th>Head</th>
+                            <td>Berserker</td>
+                            
+                        </tr>
+                        <tr>
+                            <th>Torso</th>
+                            <td>Berserker</td>
+
+                        </tr>
+                        <tr>
+                            <th>Left Arm</th>
+                            <td>Berserker</td>
+                            
+                        </tr>
+                        <tr>
+                            <th>Right Arm</th>
+                            <td>Berserker</td>
+
+                        </tr>
+                        <tr>
+                            <th>Left Leg</th>
+                            <td>Berserker</td>
+                            
+                        </tr>
+                        <tr>
+                            <th>Right Leg</th>
+                            <td>Berserker</td>
+
+                        </tr>
+                    </table>
+
+                </div>
+                        
+    
+                        <div class="ch_representation" > 
+                            <h2 id="0">Character 1 </h2>
+
+                            <div class="head" id="head-0"></div>
+                            <div >
+                                <div class="LA" id="LA-0"></div>
+                                
+                                <div class="T_L-box">
+                                    <div class="Torso"></div>
+                                    <div>
+                                        <div class="LL" id="LL-0"></div>
+                                        <div class="RL" id="RL-0"></div>
+                                    </div>
+                                
+                                </div>
+                                <div class="RA" id="RA-0"></div>
+                            </div>
+
+                        </div>
+
+            </div> 
+
+
+            <div class="box" id="1">
+                <div>
+                    <table>
+                        <caption>CHARACTER STATUS:</caption>
+                        <tr>
+                            <th>STR</th>
+                            <th>DEX</th>
+                            <th>INT</th>
+                            <th>HP</th>
+                        </tr>
+                        <tr>
+                            <td>300</td>
+                            <td>24</td>
+                            <td>3</td>
+                            <td>600</td>
+
+                        </tr>
+                    </table>
+
+
+
+                    <table id="bp_info">
+                        <caption>BODY PART CLASS:</caption>
+                        <tr>
+                            <th>Head</th>
+                            <td>Berserker</td>
+                            
+                        </tr>
+                        <tr>
+                            <th>Torso</th>
+                            <td>Berserker</td>
+
+                        </tr>
+                        <tr>
+                            <th>Left Arm</th>
+                            <td>Berserker</td>
+                            
+                        </tr>
+                        <tr>
+                            <th>Right Arm</th>
+                            <td>Berserker</td>
+
+                        </tr>
+                        <tr>
+                            <th>Left Leg</th>
+                            <td>Berserker</td>
+                            
+                        </tr>
+                        <tr>
+                            <th>Right Leg</th>
+                            <td>Berserker</td>
+
+                        </tr>
+                    </table>
+
+                </div>
+                        
+    
+                *****   CHarcter representation ****
+                        <div class="ch_representation" > 
+                            <h2 id="1"> Character 2</h2>
+
+                            <div class="head" id="head-1"></div>
+                            <div >
+                                <div class="LA" id="LA-1"></div>
+                                
+                                <div class="T_L-box">
+                                    <div class="Torso" id="Torso-1"></div>
+                                    <div>
+                                        <div class="LL" id="LL-1"></div>
+                                        <div class="RL" id="RL-1"></div>
+                                    </div>
+                                
+                                </div>
+                                <div class="RA" id="RA-1"></div>
+                            </div>
+                        
+                        
+                        </div>
+
+            </div>      -->
+
+        </section>
+
+
+
+    </main>
+    
+
+
+    <script src="App.js"></script>
 </body>
 </html>

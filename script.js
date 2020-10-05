@@ -29,7 +29,7 @@ async function Ldata() {
          console.log(eachObject);
 
     }catch(e){
-         console.log("Error! check your connection or url");
+         window.alert("Error! check your connection or url");
          console.log(e);
       }
  

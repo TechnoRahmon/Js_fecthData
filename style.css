@@ -1,0 +1,693 @@
+/*     Quicksand font  san-serfis*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+
+
+
+/*     'Passion One' font  serfis*/
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&display=swap');
+
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding:0;
+                
+            }
+
+
+            body{
+                font-size: 1em;
+                font-family: 'Quicksand', sans-serif;
+                height: auto;
+                position: relative;
+                width: 100%;
+                margin:0 auto;
+                display: flex;
+                flex-direction: column;
+                justify-content:center;
+                align-items: center;
+                background-color: brown;
+                text-align: center;
+            }
+
+
+            p,h1{
+                font-weight: 300;
+                word-spacing: 3px;
+                font-size: 500%;
+                margin-bottom:0px;
+                color:#fff;
+            }
+
+            p{
+                font-size: 250%;
+                margin-bottom:60px;
+
+            }
+
+            h3{
+                text-transform: uppercase;
+                font-size: 150%;
+                font-weight: 100;
+                letter-spacing: 3px;
+                text-align: center;
+                color:rgb(255, 149, 206);
+                background-color: rgba(29, 29, 29, 0.596);
+                padding:0 20px;
+                margin:0 auto;
+            }
+
+    /**************design 1************** */
+   
+       main{
+           width: 80%;
+           margin-top: 60px;
+       }
+   
+
+/* *******************  CHarcter nav ****************************/
+            .nav{
+                width:100%;   
+                display: flex;
+                font-size: 100%;
+               justify-content: center;
+               
+               
+               background-color:#fff;
+               
+               height: 200px;
+               padding-right: 0%;
+               z-index: 2;
+            }
+
+        
+            .titels{
+                    display: flex;
+                    width:100%;
+                    justify-content: space-around;
+                    align-content: center;
+                    margin-bottom: 20px;
+                    text-transform: uppercase;
+                    font-size: 150%;
+                    font-weight: 300;
+            }
+                /* ch_box */
+        
+            .bk_img{ /* img box */
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                height: 100%;
+                width:100%;
+                background-size: 100%;
+                background-repeat: no-repeat;
+
+            }
+            #ch-0{
+                background-image: url(img/Beserker.jpg);
+            
+                
+            }
+            #ch-1{
+                background-image: url(img/engineer1.jpg);
+
+            }
+            #ch-2{
+                background-image: url(img/rogue.jpg);
+
+            }
+            #ch-3{
+                background-image:url(img/scribe.jpg);
+
+            }
+         
+            .ch_box{    /* opictiy img box */
+                width:100%;
+                transition: all 0.5s ;
+
+                background-image: linear-gradient(#1a1a1a00, #22222200);
+                z-index: 1;
+                position: relative;
+                cursor: pointer;
+            }
+
+            .ch_box::before {
+                position: absolute;
+                content: "";
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-image: linear-gradient(#1a1a1ab4, #22222296);
+
+            
+                z-index: 2;
+                transition: opacity 0.5s linear;
+                opacity: 1;
+              }
+            
+             /* active */
+       
+             .active::before { 
+                width:100%;
+                transition: all 0.5s ;
+                z-index: 1;
+                
+                background: linear-gradient(#1a1a1a00, #22222200);
+                
+
+            }
+       
+         
+                /*  hover */
+
+            .ch_box:hover{
+                opacity:0;
+                
+            } 
+          
+
+            #ch-0:hover,#ch-1:hover,#ch-3:hover,#ch-2:hover{ 
+                background-position: top;
+                background-size: 150%;
+
+            }
+            .scale_active{
+                background-position: top;
+                background-size: 150%;
+
+            }
+        
+/* ************* ch_representation************* */
+            .Ch_section{
+                
+                width:100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                margin-top:60px;
+                height: auto;
+                padding: 40px;
+                background-color: rgb(235, 235, 235);
+                }
+                .Ch_section h2{
+                    margin-bottom: 30px;
+                }
+                #section_title{ 
+                    margin-bottom: 60px;
+                }
+               
+             .box {
+                
+                width:100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                height: auto;
+                border-bottom: 1px solid black;
+                padding-bottom: 20px;
+                margin-bottom: 40px;
+
+            }
+
+            .sub-box{
+                width:100%;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                height: auto;
+            }
+
+            table{
+                width:100%;
+                background-color: rgb(95, 132, 255);
+                padding: 20px 30px;
+                font-size: 120%;
+                margin-bottom: 60px;
+            }
+
+            caption{
+                margin-bottom: 15px;
+            }
+
+            #bp_info th,#bp_info td{ 
+                    width:50%;
+                    border-bottom: 1px solid rgb(255, 243, 243);
+
+            }
+
+            th{
+                border-bottom: 1px solid rgb(255, 243, 243);
+                padding:20px ;
+            }
+
+            td{ 
+                padding :15px ;
+            }
+
+                   
+.ch_representation{ 
+    float: right;
+    width:60%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: flex-start;
+    align-content: center;
+    margin-bottom: 60px;
+}
+           
+
+
+
+.ch_representation div{
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.ch_representation div .T_L-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: center;
+    width:196px;
+
+}
+
+.head{
+    background-image: url(img/rogue/head.jpg);
+    width:100px;
+    height: 140px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin:0 auto;
+    display: block;
+}
+
+.T_L-box div { 
+    display: flex;
+    justify-content: space-around;
+}
+.LA{
+    background-image: url(img/engineer/LA.jpg);
+    width:170px;
+    height: 299px; 
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:  right;
+
+}
+.Torso{
+    background-image: url(img/berserker/Torso.jpg);
+    width:171px;
+    height: 196px; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.RA{
+    background-image: url(img/engineer/RA.jpg);
+    width:170px;
+    height: 299px; 
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.LL{
+    background-image: url(img/rogue/LL.jpg);
+    width:100px;
+    height: 444px; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+}
+
+.RL{
+    background-image: url(img/rogue/RL.jpg);
+    float: right;
+    width:100px;
+    height: 444px; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+/* Loader */
+.loader {
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid rgb(17, 132, 240);
+    border-bottom: 10px solid rgb(14, 68, 184);
+    width: 30px;
+    height: 30px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;  
+  
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg);}
+    100% { -webkit-transform: rotate(360deg); }
+  
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg);
+    opacity: 0; }
+    100% { transform: rotate(360deg); 
+    opacity: 1;
+    }
+  }
+  
+  .container {
+      height: 100vh;
+      display: none;
+      justify-content: center;
+      align-items: center;
+  }
+
+
+
+
+
+
+        /*--------------------------------Media quary--------------------------------  */
+
+
+        @media only screen and (max-width:600px){
+
+
+            h1{ 
+                font-size: 200%;
+                margin-top:40px;
+            }
+            p,h3{
+                font-size: 150%;
+                text-align: center;
+                width:80%;
+                margin: 0 auto;
+            }
+            p{
+                margin-bottom: 20px;
+            }
+            .B_icon{
+                font-size: 15em;
+            }
+
+            .colored_div{
+                height: 50%;
+                left:18px;
+            }
+
+
+
+
+
+
+    
+        }
+
+
+        /*--------------------------------1200 to 1600--------------------------------  */
+@media only screen and (max-width:1600px){
+    
+
+    
+    
+        /***************************** Nav and footer***************************************/
+       
+          
+       
+               .nav li{ 
+                   
+                   padding :20px 15px 15px 15px;
+                   margin:20px 10px 5px 10px;
+              
+       
+               }
+       
+               .nav .logo{
+               
+               
+           
+                   margin-right :12%;
+               }
+    
+               .nav .logo  a span::after{
+                left:215px;
+    
+    
+               }
+       
+        /***************************** ***************************************/
+       
+       
+
+    
+        }
+       
+       
+       
+       
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*1200 to 1024  */
+    @media only screen and (max-width:1200px){
+        
+    
+    /***************************** Nav and footer***************************************/
+    
+    /***************************** Nav and footer***************************************/
+    
+                        /*NAV */
+    
+                    
+            
+                     
+            
+                            .nav .logo{
+                        
+                                margin-right :5%;
+                            }
+            
+                            .social-icon{
+                                margin-right:5%;
+                            }
+                            
+                            /*Footer */
+            
+            
+           
+    /***************************** ***************************************/
+    
+    
+    
+    
+    
+    
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    /*768 to 1023*/
+    @media only screen and (max-width:1023px){
+    
+    
+        
+    
+    
+            /***************************** Nav and footer***************************************/
+    
+                        /*NAV */
+    
+                        
+            
+                       .nav{
+                           font-size: 90%;
+                           justify-content: start;
+                       }
+                        .social-icon{
+                        
+                            margin-right:10%;
+                            
+                            width:20%;
+                            display: flex;
+                            
+                        }
+                        .social-icon li{
+                            margin:5px; 
+                        }
+                        .nav-links{
+                            width:30%;
+                           
+                            display: flex;
+                            flex-direction: row-reverse;
+                            align-items: center;    
+                            margin:0;            
+                        }
+                        .nav-links li { 
+                            margin-right:10px;
+                        }
+                     
+                        .nav .logo{
+                            margin-right: 0%;
+                            padding-right: 10px;
+                            width:40%;
+                            font-size: 170%;
+    
+                        }
+    
+    
+                        .nav .logo  a span::after{
+                            left:193px;
+                            top:27px;
+                
+                           }
+    
+                        /*Footer */
+        
+        
+            
+            
+     
+    
+    
+    }
+    
+    
+    
+    
+    
+    /*481 to 767        this is the requier for Assignment*/ 
+    @media only screen and (max-width:767px){
+    
+   
+    
+    
+            /***************************** Nav and footer***************************************/
+    
+            
+    
+                      /* drop down NAV */
+    
+    
+    
+                      .nav{
+    
+                        height: auto;
+                        text-align: center;
+                        font-size: 90%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        }
+        
+                    
+                        .social-icon{
+                            display: none;
+                        }
+                        .nav-links{
+                            width: 100%;
+                            justify-content: center;
+                            display: flex;
+                            flex-direction: row-reverse;
+                            align-items: flex-end;
+                            
+                        }
+    
+                        .nav-links li{ 
+                            margin:0px 0px 0px 20px ;
+                            padding:14px ;
+                            
+                        }
+                        .nav .logo{
+                        
+                            width:100%;
+                         
+                            padding :7px 5px 0px 5px;
+                            margin:0px ;
+                            font-size: 120%;
+                            height: 70px;
+                        }
+                       
+                        .nav .logo  a span::after{
+                            left: -60px;    
+                            position: relative;
+                            top: 0px;
+                            
+                        }
+    
+    
+                        .nav .logo img{
+                            max-width:50px;
+                            height: 50px;
+                            margin-top: 1px;
+                        }
+    
+    
+    
+    }
+    
+    
+    
+     /*0 to 480 */
+    @media only screen and (max-width:480px){
+    
+     
+    
+                     /* drop down NAV */
+    
+                     .nav{
+                     
+                        padding-right: 0%;
+                        height: auto;
+                        text-align: center;
+                        font-size: 90%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        }
+        
+                     
+        
+                    
+    
+                        .nav .logo{
+                        
+                            width:90%;
+                            float: left;
+                            margin:5px auto 0px auto;
+                        }
+    
+                /* ********************************** */
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        
+    }
