@@ -175,6 +175,9 @@
                 width:80%;
                 margin: 0 auto;
             }
+            h3,#info{
+                margin-bottom: 45px;
+            }
             p{
                 margin-bottom: 20px;
             }
